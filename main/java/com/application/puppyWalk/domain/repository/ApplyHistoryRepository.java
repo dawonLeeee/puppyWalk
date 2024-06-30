@@ -4,5 +4,7 @@ import com.application.puppyWalk.domain.ApplyHistory;
 
 public interface ApplyHistoryRepository {
 
-    ApplyHistory save(ApplyHistory applyHistory);
+    ApplyHistory saveApplyHistory(ApplyHistory applyHistory);
+
+    boolean existsApplyHistory(long id, long id1);
 }
